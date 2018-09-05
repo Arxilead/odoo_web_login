@@ -2,8 +2,8 @@
 ##############################################################################
 #
 #    Samples module for Odoo Web Login Screen
-#    Copyright (C) 2016- XUBI.ME (http://www.xubi.me)
-#    @author binhnguyenxuan (https://www.linkedin.com/in/binh-nguyen-xuan-46556279)
+#    Copyright (C) 2017- XUBI.ME (http://www.xubi.me)
+#    @author binhnguyenxuan (https://www.linkedin.com/in/binhnguyenxuan)
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -18,7 +18,29 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #    
+#    Background Source: http://forum.xda-developers.com/showpost.php?p=37322378
 #
 ##############################################################################
-
-import main
+{
+    'name': 'Odoo Web Login Screen',
+    'summary': 'The new configurable Odoo Web Login Screen',
+    'version': '11.0.1.0',
+    'category': 'Website',
+    'summary': """
+The new configurable Odoo Web Login Screen
+""",
+    'author': "binhnguyenxuan (www.xubi.me)",
+    'website': 'http://www.xubi.me',
+    'license': 'AGPL-3',
+    'depends': [
+    ],
+    'data': [
+        'data/ir_config_parameter.xml',
+        # 'templates/website_templates.xml',
+        'templates/webclient_templates.xml',
+    ],
+    'qweb': [
+    ],
+    'installable': True,
+    'application': True,
+}
